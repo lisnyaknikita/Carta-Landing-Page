@@ -1,0 +1,102 @@
+.hero {
+  margin-bottom: 156px;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.hero__images {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 560px) {
+    flex-direction: column;
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+  max-width: 430px;
+  padding-top: 30px;
+  margin-bottom: 51px;
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 560px) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+.hero__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #242424;
+  margin-bottom: 46px;
+  max-width: 424px;
+
+  @media screen and (max-width: 560px) {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero__btn--black {
+  color: #fff;
+  background-color: #000000;
+
+  &:hover {
+    background-color: $blackBtnHover;
+  }
+}
+
+.hero__btn--transparent {
+  color: #000000;
+
+  &:hover {
+    background-color: $transparentBtnHover;
+  }
+}

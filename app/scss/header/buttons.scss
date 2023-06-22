@@ -1,0 +1,54 @@
+.header__buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+
+  .header__btn--transparent {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #000000;
+    background-color: transparent;
+    &:hover {
+      background-color: $transparentBtnHover;
+    }
+  }
+
+  .header__btn--black {
+    color: #fff;
+    background-color: #000;
+    &:hover {
+      background-color: $blackBtnHover;
+    }
+  }
+
+  &.inModal {
+    position: fixed;
+    flex-direction: column;
+    z-index: 22;
+    margin-right: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+
+    > * {
+      width: 100%;
+      padding: 20px;
+      border-radius: 0;
+    }
+
+    .header__btn--transparent {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    margin-right: 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
